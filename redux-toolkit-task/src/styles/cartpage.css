@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+
+  margin-top: 30px;
+}
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-left: 20px;
+}
+
+.item-cart {
+  border: 1px solid #934a4a;
+  padding: 20px;
+  width: 30em;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  background: #d3d0d0;
+}
+
+.item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.quantity select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.price h1 {
+  color: #ff5733; /* Change the color to suit your design */
+  font-size: 1.25rem;
+}
+
+.item-details {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.image-input-conatiner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+  margin: 5px 0;
+}
+
+.category {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+.subtotal,
+.shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal h3,
+.shipping h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+}
+
+.total {
+  margin-top: 10px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price-heading h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.total-price h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #ff5733; /* Change the color to suit your design */
+}
+button {
+  margin-top: 10px;
+  background-color: #ff5757;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.back-button {
+  background: #ed5f5f;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.back-button .link {
+  color: azure !important;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .item-home {
+    width: 25em;
+    margin: 0 auto;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .item-home {
+    width: 80%;
+  }
+}

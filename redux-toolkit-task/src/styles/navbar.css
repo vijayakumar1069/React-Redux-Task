@@ -1,0 +1,37 @@
+/* Default styles for the navigation bar */
+nav {
+  background-color: #f3cfcf;
+  color: #dc2424;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  margin: 10 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2b0bf7;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
